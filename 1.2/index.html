@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZodiacTV</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="screen.css" />
+</head>
+<!-- <video controls>
+    <source src="/IDM-231-Scripting/MP4/cowboy_bebop.mp4" type="video/mp4">
+    </video> -->
+<video id="theDrive" src="videos/theDriveMain2.mp4" autoplay loop></video>
+<button id="showButton" onclick="window.location.reload(); myFunction();">Refresh Page</button>
+
+<body id="background">
+    <main id="signButton">
+        <div id="leftSide">
+            <button class="soundtrack" data-sound="dragon_ball" id="dragon_ball"><img src="icons/dragonball.svg"
+                    alt=""></button>
+            <button class="soundtrack" data-sound="berserk" id="berserk"><img src="icons/berserk.svg" alt=""></button>
+            <button class="soundtrack" data-sound="cowboy_bebop" id="cowboy_bebop"><img
+                    src="icons/cowboy_bebop_swordfiish.svg" alt=""></button>
+            <button class="soundtrack" data-sound="neon_genesis" id="neon_genesis"><img src="icons/neon_genesis.svg"
+                    alt=""></button>
+            <button class="soundtrack" data-sound="fullmetal_alchemist" id="fullmetal_alchemist"><img
+                    src="icons/fullmetal.svg" alt=""></button>
+            <button class="soundtrack" data-sound="steins_gate" id="steins_gate"><img src="icons/steins_gate.svg"
+                    alt=""></button>
+        </div>
+        <div id="tv">
+            <img id="tvImage" src="WireFrame/PNG/TelevisionbaseLR.png" alt="">
+            <div id="container">
+                <video id="static" src="videos/static.mp4" autoplay loop muted></video>
+            </div>
+            <!-- <img id="static" src="WireFrame/PNG/staticLR.png" alt=""> -->
+            <!-- <iframe id="video" src="" frameborder="0" allow="autoplay; fullscreen" allowfullscreen controls="false"></iframe> -->
+            <video id="video" src="" autoplay></video>
+            <div>
+                <p id="flavorText" hidden></p>
+            </div>
+        </div>
+        <div id="rightSide">
+            <button class="soundtrack" data-sound="pokemon" id="pokemon"><img src="icons/pokemon.svg" alt=""></button>
+            <button class="soundtrack" data-sound="ghost_in_the_shell" id="ghost_in_the_shell"><img
+                    src="icons/ghost_in_the_shell.svg" alt=""></button>
+            <button class="soundtrack" data-sound="avatar" id="avatar"><img src="icons/avatar.svg" alt=""></button>
+            <button class="soundtrack" data-sound="psycho_pass" id="psycho_pass"><img src="icons/psycho_pass.svg"
+                    alt=""></button>
+            <button class="soundtrack" data-sound="flcl" id="flcl"><img src="icons/FLCL.svg" alt=""></button>
+            <button class="soundtrack" data-sound="rick_morty" id="rick_morty"><img src="icons/rick_morty.svg"
+                    alt=""></button>
+        </div>
+        <form>
+            <input id="bdayinput" type="date" placeholder="MM/DD/YYYY" name="bdayinput">
+            <input id="submit" type="submit" value="Submit" for="bdayinput">
+        </form>
+
+        <button id="hideButton" onclick="myFunction()">Hide</button>
+        <button id="btn-stop-sounds">Pause</button>
+        <button id="question" onclick="model()">?</button>
+        <p id="helpModel" class="hidden">Enter your birthday in this format MM/DD/YYYY <br>Click Submit & find your TV
+            Zodiac!
+        </p>
+    </main>
+    <audio id="speakers"></audio>
+    <script src="main.js"></script>
+</body>
+
+</html>

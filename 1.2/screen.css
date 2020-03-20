@@ -1,0 +1,259 @@
+@font-face {
+    font-family: 'krungthepregular';
+    src: url('fonts/krungthep-webfont.woff2') format('woff2'),
+         url('fonts/krungthep-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+main {
+	align-items: center;
+	display: flex;
+	height: 100vh;
+    justify-content: center;
+    /* box-shadow: 0 0 60% rgba(0,0,0,0.9) inset; */
+}
+
+body {
+    font-family: "krungthepregular";
+    /* background-image: url(backgrounds/cyberpunk.jpg); */
+    background-size: 200% 200%;
+    align-items: center;
+	display: flex;
+	height: 100vh;
+    justify-content: center;
+}
+
+button {
+    background: none;
+	border: 0;
+	padding: 0.75rem;
+    transition: filter 225ms ease-in-out;
+    cursor: default;
+    filter:drop-shadow(1rem 1rem 2rem #080808);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+	filter: invert(100%);
+}
+
+#btn-stop-sounds {
+	background-color: rgb(226, 43, 217);
+    color: white;
+    border-radius: 1rem;
+    position: fixed;
+    left: 69.63%;
+    bottom: 59.5%;
+    opacity: .8;
+}
+
+#leftSide img, #rightSide img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 4rem;
+  cursor: pointer;
+  filter: opacity(.8);
+}
+
+#leftSide button, #rightSide button {
+    width: 100%;
+    height: 100%;
+  }
+
+  #leftSide, #rightSide {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 20%;
+  }
+
+  #leftSide {
+      float: left;
+  }
+
+  #rightSide {
+      float: right;
+  }
+
+#tv {
+    width: 55%;
+    float: left;
+    /* padding-left: 2.5rem; */
+    padding-bottom: 13rem;
+}
+
+#tvImage {
+    width: 100%;
+    filter:drop-shadow(1rem 1rem 1rem #1a1a1a);
+    /* filter: brightness(20%); */
+    filter: opacity(.9);
+}
+
+/* #video video {
+    z-index: 100;
+    width: 352px;
+    height: 288px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+} */
+/* video {
+    width: 355px;
+    height: auto;
+} */
+
+#video {
+    position: fixed;
+    right: 5.15%;
+    top: 9%;
+    z-index: -100;
+    width: 100%;
+    height: 51.4%;
+    filter: brightness(90%);
+}
+ /* #static {
+    width: 55%;
+    padding-bottom: 13rem;
+    z-index: -150;
+    position: fixed;
+    left: 23%;
+ } */
+
+ #static {
+    width: 50%;
+    height: auto;
+    padding-bottom: 13rem;
+    z-index: -150;
+    position: fixed;
+    left: 25%;
+    top: 10%;
+    clip: rect(0px,550px,500px,30px);
+    opacity: .8;
+    filter: contrast(140%);
+ }
+
+ /* #container {
+     overflow: hidden;
+     display: block;
+ } */
+
+ form {
+     position: fixed;
+     top: 71%;
+ }
+
+ form input {
+    font: "krungthepregular";
+    font-size: .75rem;
+    filter: invert(100%);
+    height: 2rem;
+    width: 12rem;
+    text-align: center;
+    border-radius: 1rem;
+ }
+
+#submit {
+    width: 5rem;
+    background-color: rgb(255, 0, 0);
+    filter: invert(100%);
+}
+
+input #submit:hover {
+    filter: invert(100%);
+}
+
+ #theDrive {
+     position: fixed;
+     z-index: -200;
+     /* width: 103vw; */
+     height: 105%;
+ }
+
+ #flavorText {
+     position: fixed;
+     top: 77%;
+     left: 0;
+     height: min-content;
+     line-height: 1.3;
+     width: 50%;
+     /* align-self: auto; */
+     background: rgba(0, 94, 94, 0.598);
+     bottom: 10%;
+     padding: .5rem;
+     text-align: center;
+     border-style: outset;
+     border: .2rem solid rgba(218, 0, 0, 0.63);
+     color: aliceblue;
+     border-radius: 1rem;
+     margin: 0 25%;
+ }
+
+ #background {
+     filter: contrast(110%);
+ }
+
+ #hideButton {
+     position: fixed;
+     left: 70%;
+     bottom: 53%;
+     background: rgb(226, 43, 217);
+     /* height: 2rem;
+     width: 3rem;
+     font-size: .5rem;
+     padding: 0; */
+     color: #e7e7e7;
+     /* border-radius: 0 0 .5rem 0; */
+     border-radius: 1rem;
+     opacity: .9;
+ }
+
+ #showButton {
+    position: fixed;
+    /* left: 0;
+    top: 0; */
+    background: rgb(226, 43, 217);
+    height: 5rem;
+    width: 5rem;
+    font-size: 1rem;
+    padding: 0;
+    color: #e7e7e7;
+    border-radius: 5rem;
+    opacity: .9;
+    display: none;
+    top: 41%;
+    left: 47%;;
+}
+
+#question {
+    position: fixed;
+    font-size: 5rem;
+    right: 0;
+    top: 0;
+    padding: 0 1rem 0 0;
+    color: #e7e7e7;
+    border: #080808;
+}
+
+#question:hover {
+    color: rgb(255, 0, 0);
+}
+
+#helpModel {
+    position: fixed;
+    font-size: 3rem;
+    background: rgba(0, 94, 94, 0.598);
+    /* bottom: 10%; */
+    padding: .5rem;
+    text-align: center;
+    border-style: outset;
+    border: .2rem solid rgba(218, 0, 0, 0.63);
+    color: aliceblue;
+    border-radius: 1rem;
+    /* display: none; */
+}
+
+.hidden {
+    display: none;
+}
